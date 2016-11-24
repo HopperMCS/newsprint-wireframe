@@ -1,0 +1,35 @@
+.ribbon 
+  font-size: 12px !important
+  font-family: 'Mate', serif
+  width: auto
+  position: relative
+  background: black
+  color: #fff
+  text-align: left
+  padding: 0.5em 2em
+
+.ribbon:after 
+  content: ""
+  position: absolute
+  display: inline
+  bottom: -0.9em
+  border: 1em solid black
+  z-index: -13 
+  
+.ribbon:after 
+  right: -1.7em
+  border-left-width: 1.5em
+  border-right-color: transparent
+
+.ribbon .ribbon-contentenido:after 
+  content: ""
+  position: absolute
+  display: block
+  border-style: solid
+  border-color: gray transparent transparent transparent
+  bottom: -1em
+
+.ribbon .ribbon-contentenido:after 
+  right: 0
+  border-width: 1em 1em 0 0
+

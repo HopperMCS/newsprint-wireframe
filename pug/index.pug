@@ -1,0 +1,43 @@
+include includes.pug
+html
+  body
+    include header.pug
+    .container
+      .row
+        .col-md-9.post
+          br
+          h2.title Posts - Newest to Oldest
+          hr.head
+          .row
+            include placeholding.pug
+            mixin post
+              .col-sm-6.post
+                hr.thin
+                .row
+                  .col-md-8.col-sm-7
+                    h4.card-title 
+                      = postTitle
+                  .col-md-4.col-sm-5
+                    h1.ribbon
+                      strong.ribbon-contentenido
+                        = postDate
+                hr.normal
+                p.card-text
+                  = postText
+                hr.thick
+                br
+                  
+            +post
+            +post
+            +post
+            +post
+            +post
+
+        .col-md-3
+          include sidebar.pug
+          
+
+
+
+              
+              
